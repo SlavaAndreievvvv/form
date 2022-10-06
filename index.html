@@ -4,33 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slava</title>
+    <title>Form</title>
   </head>
   <body>
-    <form action="https://sandbox.merge.academy/api/message" method="POST">
+    <form action="https://sandbox.merge.academy/api/message" method="post">
       <p>
-        <label for="name">Ім'я</label>
-        <br />
+        <label for="name">Ім'я</label><br />
         <input
-          type="text"
-          id="name"
+          type="name"
+          name="name"
           required
           minlength="2"
           maxlength="40"
-          placeholder="Ваше ім'я"
+          placeholder="Ваше Ім'я"
         />
       </p>
       <p>
-        <label for="message">Повідомлення</label>
-        <br />
+        <label for="message">Повідомлення</label><br />
         <textarea
-          name="text"
+          name="message"
           id="message"
-          rows="5"
-          required
-          placeholder=" Ваше повідомлення"
-        >
-        </textarea>
+          cols="30"
+          rows="10"
+          placeholder="Ваше повідомлення"
+        ></textarea>
       </p>
       <button type="submit">Відправити</button>
     </form>
