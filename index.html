@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slava</title>
+  </head>
+  <body>
+    <p>
+      <form action="https://sandbox.merge.academy/api/message" method="POST">
+      <label for="name">Name</label>
+      <br />
+      <input type="text" id="name" required minlength="2" maxlength="40"  placeholder="Name"/>
+    </p>
+    <p>
+      <label for="text">Some text</label>
+      <br>
+      <textarea 
+        name="text" id="text" rows="5" required placeholder="text">
+      </textarea>
+    </p>
+    <button type="submit">Send</button>
+  </form>
+  </body>
+</html>
